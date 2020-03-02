@@ -25,17 +25,19 @@ ZSH_THEME="agnoster"
 # Uncomment the following line to display red dots whilst waiting for completion.
 # COMPLETION_WAITING_DOTS="true"
 
-# Which plugins would you like to load?
-# Standard plugins can be found in ~/.oh-my-zsh/plugins/*
-# Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
-# Example format: plugins=(rails git textmate ruby lighthouse)
-# Add wisely, as too many plugins slow down shell startup.
-plugins=(git last-working-dir z zsh-autosuggestions)
+# Plugins go here. zsh-autosuggestions and zsh-syntax-highlighting need to be installed through package manager
+# and then copied from /usr/share/zsh/plugins to ./oh-my-zsh/custom/plugins.
+# After that Oh-my-zsh knows how to load it and sourcing is not needed. 
+# If package manager plugins are updated the new ones need to be copied again.
+
+plugins=(git
+last-working-dir
+z
+zsh-autosuggestions
+zsh-syntax-highlighting
+)
 
 source $ZSH/oh-my-zsh.sh
-source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
-source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.plugin.zsh
 
 # User configuration
 
